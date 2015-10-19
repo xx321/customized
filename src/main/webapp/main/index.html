@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>製作您的襪子</title>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/wufuyangscript.js"></script>
+<!-- 分頁js -->
+<script src="js/jquery.pagination.js"></script>
+<script src="js/xhdata.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!-- Owl Carousel Assets -->
+<link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="owl-carousel/owl.theme.css" rel="stylesheet">
+<!-- fancybox -->
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+<!-- 地址js -->
+<script type="text/javascript" src="js/jquery.twzipcode.min.js"></script>
+  
+<script type="text/javascript">
+// 點圖片放大
+ $(document).ready(function() {
+      $(".fancybox-effects-a").fancybox({
+        helpers: {
+          title : {
+            type : 'outside'
+          },
+          overlay : {
+            speedOut : 0
+          }
+        }
+      });
+      $(".fancybox-effects-b").fancybox({
+        helpers: {
+          title : {
+            type : 'outside'
+          },
+          overlay : {
+            speedOut : 0
+          }
+        }
+      });
+      $('#twzipcode').twzipcode({
+          'detect': true // 預設為 false
+      });
+ });
+</script>
+</head>
+<body>
+<div id="wrapper"> 
+   <div id="header">
+      <div class="header-left">
+        <img src="images/aa.gif"  height="77" width="87">
+        <a href="#"><span>作品參考<p>samples</p></span></a>
+        <a href="#"><span>問與答<p>Q&A</p></span></a>
+      </div>
+  
+       <div class="header-right">
+        <a href="#"><img src="images/mail.png" height="35" width="50"></a>
+        <a href="#"><img src="images/fb.png" height="40" width="40"></a>
+        <a href="#"><img src="images/shopping.png" height="40" width="40"></a>
+       </div>
+
+   </div>
+<div class="wrapper_line"></div>
+    
+ <div id="content">
+
+ 	
+   <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+    <ul id="myTab"　 class="nav nav-tabs" role="tablist">
+     <li role="presentation" class="active"><a href="#sock" id="sock-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">１選擇您的襪子</a></li>
+     <li role="presentation" class=""><a href="#sockmodel" role="tab" id="sockmodel-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">２選擇您的襪子款式</a></li>
+     <li role="presentation" class=""><a href="#sockcolor" role="tab" id="sockcolor-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">３選擇您的顏色尺寸</a></li>
+     <li role="presentation" class=""><a href="#sockimg" role="tab" id="sockimg-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">４選擇您的電繡圖樣</a></li>
+     <li role="presentation" class=""><a href="#boxing" role="tab" id="boxing-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">５選擇您的包裝方式</a></li>
+     <li role="presentation" class=""><a href="#receipt" role="tab" id="receipt-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">６選擇工單及條款</a></li>
+     <li role="presentation" class=""><a href="#receiving" role="tab" id="receiving-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">７結帳</a></li>
+     <li role="presentation" class=""><a href="#finish" role="tab" id="finish-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">８完成</a></li>
+    </ul>
+    <div id="myTabContent"  class="tab-content">
+    <!--１選擇您的襪子尺寸 -->
+      <div role="tabpanel" class="tab-pane fade active in" id="sock" aria-labelledby="sock-tab">
+        <div id="sm_wrapper1">
+         <!-- title -->
+              <div class="title_1">
+                <h3>選擇您的商品</h3>
+                <h4>CHOOSE YOUR ITEM</h4>
+              </div>
+
+        	<div id="sm_sidebar1-1">
+               <!-- owl-demo -->
+               <div id="owl-demo" class="owl-carousel">
+                 <button type="button" class="btn btn-warning sock_model">男襪</button>
+                 <button type="button" class="btn btn-warning sock_model">女襪</button>
+                 <button type="button" class="btn btn-warning sock_model">兒童襪</button>
+                 <button type="button" class="btn btn-warning sock_model">嬰兒襪</button>
+               </div>
+                <!-- 導滑動JS -->
+                <script>
+                $(document).ready(function() {
+                  var owl = $("#owl-demo");
+                  owl.owlCarousel({
+                  items : 3, //10 items above 1000px browser width
+                  itemsDesktop : [1000,3], //5 items between 1000px and 901px
+                  itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+                  itemsTablet: [600,3], //2 items between 600 and 0;
+                  pagination : false,
+                  itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+                  });
+                });
+                </script>
+                <div style="margin:50px 20px 0 0; text-align:center; ">
+                    <a href="images/1.png" class="myButton fancybox-effects-a" >
+                      襪子尺寸對照表
+                    </a>
+                </div>
+        	</div>
+            <!-- 箭頭 -->
+             <div class="glyphicon glyphicon-menu-left"></div>
+             <div class="glyphicon glyphicon-menu-right"></div>
+
+          <div class="wrapper_line"></div>
+          <div id="shopping_box">
+             <style type="text/css">
+                #shopping_box .left{
+                  float:left; 
+                  margin-left:50px; 
+               
+                  font-weight:bold; 
+                  color:#880000;
+                }
+                #shopping_box .left .total{
+                  color:#444;
+                  font-size:30px; 
+                }
+                #shopping_box .left .print{
+                  color:#444;
+                  font-size:40px; 
+                  border-bottom: 2px solid #444;
+                }
+                #shopping_box .right{
+                  float:right;
+                }
+                #shopping_box .right a{
+                  float:left;
+                }
+                #shopping_box .right a{
+                  font-size:40px; 
+                  color:#444;
+                  font-weight: bold;
+                  text-decoration: none;
+                }
+                #shopping_box .right a:hover{
+                  text-decoration: none;
+                }
+                #shopping_box .right a span{
+                  font-size:30px;
+                }
+             </style>
+              <div class="left">
+                 <span class="total">Total：</span><span class="print">NT.999</span>
+              </div>
+              <div class="right">
+                <a href="#">NEXT<span class="glyphicon glyphicon-triangle-right"></span></a>
+              </div>  
+          </div>
+        </div>
+      </div> 
+     <!--2選擇您的襪子款式 -->
+  <div role="tabpanel" class="tab-pane fade" id="sockmodel" aria-labelledby="sockmodel-tab">
+   
+     <div id="sm_wrapper2">
+       <div class="title_2">
+           <h5>男襪</h5>
+       </div>
+           <div id="sm_sidebar2">
+               <!-- owl -->
+                  <div id="owl-demo2" class="owl-carousel">
+                     <a href="#"><img src="images/a.jpg" height="400" width="300"><div>短襪</div></a>
+                     <a href="#"><img src="images/b.jpg" height="400" width="300"><div>腳裸襪</div></a>
+                     <a href="#"><img src="images/c.jpg" height="400" width="300"><div>長襪</div></a>
+                     <a href="#"><img src="images/a.jpg" height="400" width="300"><div>短襪</div></a>
+                     <a href="#"><img src="images/b.jpg" height="400" width="300"><div>腳裸襪</div></a>
+                     <a href="#"><img src="images/c.jpg" height="400" width="300"><div>長襪</div></a>
+                     <a href="#"><img src="images/a.jpg" height="400" width="300"><div>短襪</div></a>
+                     <a href="#"><img src="images/b.jpg" height="400" width="300"><div>腳裸襪</div></a>
+                     <a href="#"><img src="images/c.jpg" height="400" width="300"><div>長襪</div></a>
+                  </div>
+               <!-- 導滑動JS -->
+                  <script>
+                  $(document).ready(function() {
+                    var owl = $("#owl-demo2");
+                    owl.owlCarousel({
+                    items : 3, //10 items above 1000px browser width
+                    itemsDesktop : [1000,3], //5 items between 1000px and 901px
+                    itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+                    itemsTablet: [600,3], //2 items between 600 and 0;
+                    pagination : false,
+                    itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+                    });
+                  });
+                  </script>
+            </div>
+             <!-- 箭頭 -->
+             <div class="glyphicon glyphicon-menu-left"></div>
+             <div class="glyphicon glyphicon-menu-right"></div>
+    </div>
+      
+  <!--imgwrapper 分頁-->
+  <div id="img_wrapper">
+    <div class="title_2">
+           <h5>男襪/長襪</h5>
+    </div>
+    <div id="model">
+     <ul id="htcList">    
+      </ul> 
+        <ul id="Searchresult" style="display:none;" class="btn btn-info"> 
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20106141152611.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20131014193539.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294152355.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294152957.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294154557.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201310115174757.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201436417452611.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file2014317110464311.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294154557.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201310115174757.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201436417452611.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file2014317110464311.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20106141152611.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20131014193539.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294152355.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294152957.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294154557.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201310115174757.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201436417452611.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file2014317110464311.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294154557.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201310115174757.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file201436417452611.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file2014317110464311.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20106141152611.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20131014193539.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+                   <li><button id="detail" class="img-thumbnail"><img  src="images/five/file20138294152355.jpg"></button>
+                     <div class="product_name">竹炭五指襪</div>
+                     <div class="product_id">S96480</div>
+                     <div class="product_price">NT. 199</div>
+                   </li>
+              </ul>
+            </div>
+         <ul id="pagination" class="pagination"><!-- 这里显示分页 --></ul>
+        </div>
+       
+
+          <!--底部-->
+         <div class="wrapper_line"></div>
+          <div id="shopping_box">
+              <div class="left">
+                 <span class="total">Total：</span><span class="print">NT.999</span>
+              </div>
+              <div class="right">
+               　<a href="#" class="clean"><span class="glyphicon glyphicon-triangle-left"></span>BACK│</a>
+                <a href="#" class="choose">NEXT<span class="glyphicon glyphicon-triangle-right"></span></a>
+              </div>  
+          </div>
+
+      </div>
+   
+      <!--3選擇您的襪子款式 -->
+      <div role="tabpanel" class="tab-pane fade" id="sockcolor" aria-labelledby="sockcolor-tab">
+        <div class="title_2">
+           <h5>男襪/長襪/條紋款</h5>
+          </div>
+        <div id="sm_wrapper3">
+           <div id="sm_sidebar3-1">
+             <div class="panel panel-primary">
+              
+              <div class="panel-body">
+                  <li>襪尖雙層纖維，舒適耐磨又耐穿舒適耐磨又耐穿舒適耐磨又耐穿舒適耐磨又耐穿舒適耐磨又耐穿</li>
+                  <li>襪底獨創透氣溝槽設計，排汗不潮濕</li>
+                  <li>左右腳獨立設計</li>
+                  <li>襪底獨創透氣溝槽設計，排汗不潮濕</li>
+                  <li>左右腳獨立設計</li>
+                  <li>襪底獨創透氣溝槽設計，排汗不潮濕</li>
+              </div>
+              <div class="revision3">
+                <label style="float:left;">選擇顏色</label>
+                  <div class="owl-carousel" id="owl-demo3" >
+                    <button type="button" class="btn btn-default color_button"></button>
+                    <button type="button" class="btn btn-warning color_button"></button>
+                    <button type="button" class="btn btn-primary color_button"></button>
+                    <button type="button" class="btn btn-default color_button"></button>
+                    <button type="button" class="btn btn-warning color_button"></button>
+                    <button type="button" class="btn btn-primary color_button"></button>
+                    <button type="button" class="btn btn-warning color_button"></button>
+                    <button type="button" class="btn btn-primary color_button"></button>
+                    <button type="button" class="btn btn-warning color_button"></button>
+                    <button type="button" class="btn btn-primary color_button"></button>
+                 </div>
+                 <div style="color:red; font-size:11px;">*圖片顏色因電腦差異而有色偏、請一律以實品為準</div>
+                  <!-- 導滑動JS -->
+                  <script>
+                  $(document).ready(function() {
+                    var owl = $("#owl-demo3");
+                    owl.owlCarousel({
+                    items : 6, //10 items above 1000px browser width
+                    pagination : false,
+                    itemsDesktop : [1000,6], //5 items between 1000px and 901px
+                    itemsDesktopSmall : [900,6], // 3 items betweem 900px and 601px
+                    itemsTablet: [600,6], //2 items between 600 and 0;
+                    itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+                    });
+                  });
+                  </script>
+                  <!-- 箭頭 -->
+                 <div class="glyphicon glyphicon-menu-left"></div>
+                 <div class="glyphicon glyphicon-menu-right"></div>
+              </div>
+
+             <div class="revision3-2">
+             <label style="float:left; width:500px;">選擇尺寸</label>
+                  <div style="float:left;">
+                    <button type="button" class="btn btn-default">15CM~20CM</button>
+                    <button type="button" class="btn btn-default">25CM~30CM</button>
+                    <button type="button" class="btn btn-default">35CM~40CM</button>
+                    <a href="images/1.png" class="size_button2 fancybox-effects-a">
+                      襪子尺寸對照表
+                    </a>
+                  </div>
+             </div>
+           </div>
+          </div>
+          
+       <div id="sm_sidebar3-2">
+         <a class="fancybox-effects-a" href="images/short/file201312102142025.jpg"><img id="change" class="img-thumbnail color_img " src="images/short/file201312102142025.jpg" data-holder-rendered="true"></a>
+       </div>
+        </div>
+         <!--底部-->
+          <div class="wrapper_line"></div>
+          <div id="shopping_box" style="margin-top:10px;">
+              <div class="left">
+                 <span class="total">Total：</span><span class="print">NT.999</span>
+              </div>
+              <div class="right">
+               　<a href="#"><span class="glyphicon glyphicon-triangle-left"></span>BACK│</a>
+                <a href="#">NEXT<span class="glyphicon glyphicon-triangle-right"></span></a>
+              </div>  
+          </div>
+      </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $(".d1").keyup(function(){
+      var des = $(".d1").val();
+      if(des == ''){  
+            $(".dtt").html("○"); 
+      }
+      else{
+        $(".dtt").html("●"); 
+      }
+    });
+     
+ });
+</script>
+        <!--4選擇您的電繡圖案 -->
+        <div role="tabpanel" class="tab-pane fade" id="sockimg" aria-labelledby="sockimg-tab-tab">
+           <div id="sm_wrapper4-1">
+                 
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" style="font-size:20px;" role="tablist">
+            <li role="presentation" class="active"><a href="#images" aria-controls="images" role="tab" data-toggle="tab"><span>○</span>電繡圖案</a></li>
+            <li role="presentation" ><a href="#font" aria-controls="font" role="tab" data-toggle="tab"><span class="dtt">○</span>電繡名子</a></li>
+           
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane tab-pane2 active" id="images">
+              <div class="title"><span style="color:red;">NT.80/</span>個<span><a class="sample_button" href="#">Sample</a></span></div>
+                  <div id="owl-demo4" class="owl-carousel">
+                     <button class="btn btn-default"><img src="images/material/1.png"></button>
+                     <button class="btn btn-default"><img src="images/material/2.png"></button>
+                     <button class="btn btn-default"><img src="images/material/3.png"></button>
+                     <button class="btn btn-default"><img src="images/material/4.png"></button>
+                     <button class="btn btn-default"><img src="images/material/5.png"></button>
+                     <button class="btn btn-default"><img src="images/material/6.png"></button>
+                     <button class="btn btn-default"><img src="images/material/7.png"></button>
+                  </div>
+               <!-- 導滑動JS -->
+                  <script>
+                  $(document).ready(function() {
+                    var owl = $("#owl-demo4");
+                    owl.owlCarousel({
+                    items : 5, //10 items above 1000px browser width
+                    itemsDesktop : [1000,5], //5 items between 1000px and 901px
+                    itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+                    itemsTablet: [600,3], //2 items between 600 and 0;
+                    pagination : false,
+                    itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+                    });
+                  });
+                  </script>
+                  <!-- 箭頭 -->
+                     <div class="glyphicon glyphicon-menu-left"></div>
+                     <div class="glyphicon glyphicon-menu-right"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane tab-pane1" id="font">
+                <div class="title"><span style="color:red;">NT.80/</span>限8個英文字母內<span><a class="sample_button" href="#">Sample</a></span></div>
+                <input type="text" id="description" class="d1 form-control insert_text" placeholder="請輸入文字" >
+                <div style="color:red;">※請留意字母大小寫及標點符號</div>
+                <h4>選擇字體</h4>
+                  <button type="button" class="btn btn-default default">Arial</button>
+                  <button type="button" class="btn btn-default default">Century</button>
+                  <button type="button" class="btn btn-default default">Eleganl</button>
+                  <button type="button" class="btn btn-default default">Gothic</button>
+                <h4>選擇文字顏色</h4>
+                  <button type="button" style="background:#000;" class="btn black btn1"></button>
+                  <button type="button" class="btn btn-default white btn1"></button>
+                  <button type="button" class="btn btn-primary primary btn1"></button>
+                  <button type="button" class="btn btn-success success btn1"></button>
+                  <button type="button" class="btn btn-info info btn1"></button>
+                  <button type="button" class="btn btn-warning warning btn1"></button>
+                  <button type="button" class="btn btn-danger danger btn1"></button>
+            </div>
+          </div>
+        </div> 
+        <!-- 秀圖VIEW部份 -->
+      
+          <div id="sm_sidebar4-3">
+             <a class="fancybox-effects-a" href="images/short/file201312102142025.jpg"><img  class="img-thumbnail color_img" src="images/short/file201312102142025.jpg" data-holder-rendered="true"></a>
+          </div>
+      
+
+          <!--底部-->
+          <div class="wrapper_line"></div>
+          <div id="shopping_box" style="margin-top:10px;">
+              <div class="left">
+                 <span class="total">Total：</span><span class="print">NT.999</span>
+              </div>
+              <div class="right">
+               　<a href="#"><span class="glyphicon glyphicon-triangle-left"></span>BACK│</a>
+                <a href="#">NEXT<span class="glyphicon glyphicon-triangle-right"></span></a>
+              </div>
+          </div>
+      </div>
+   
+      <!-- 5頁面 選擇包裝方式 -->
+      <div role="tabpanel" class="tab-pane fade" id="boxing" aria-labelledby="boxing-tab">
+        <div id="sm_wrapper5">
+            
+         <div id="sm_content5">
+
+          <div id="owl-demo5" class="owl-carousel">
+                <div id="sm_sidebar5">
+                  <img src="images/m1.png" height="250" width="150">
+                    <div id="for_radio5">
+                     <input type="radio" name="optionsRadios" id="optionsRadios1" class="radio5" value="option1" checked>
+                    </div>
+                    <div class="center_text1">基本款</div>
+                    <div class="center_text2">$0</div>
+                </div>
+
+                <div id="sm_sidebar5">
+                 <img src="images/m2.png" height="250" width="150">
+                  <div id="for_radio5">
+                   <input type="radio" name="optionsRadios" id="optionsRadios1" class="radio5" value="option1" checked>
+                  </div>
+                   <div class="center_text1">生日款</div>
+                   <div class="center_text2">$50</div>
+                </div>
+                <div id="sm_sidebar5">
+                  <img src="images/m3.png" height="250" width="150">
+                    <div id="for_radio5">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" class="radio5" value="option1" checked>
+                    </div>
+                   <div class="center_text1">情人款</div>
+                   <div class="center_text2">$50</div>
+                </div>
+
+                <div id="sm_sidebar5">
+                  <img src="images/m1.png" height="250" width="150">
+                    <div id="for_radio5">
+                     <input type="radio" name="optionsRadios" id="optionsRadios1" class="radio5" value="option1" checked>
+                    </div>
+                    <div class="center_text1">基本款</div>
+                    <div class="center_text2">$0</div>
+                </div>
+
+                <div id="sm_sidebar5">
+                 <img src="images/m2.png" height="250" width="150">
+                  <div id="for_radio5">
+                   <input type="radio" name="optionsRadios" id="optionsRadios1" class="radio5" value="option1" checked>
+                  </div>
+                   <div class="center_text1">生日款</div>
+                   <div class="center_text2">$50</div>
+                </div>
+                <div id="sm_sidebar5">
+                  <img src="images/m3.png" height="250" width="150">
+                    <div id="for_radio5">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" class="radio5" value="option1" checked>
+                    </div>
+                   <div class="center_text1">情人款</div>
+                   <div class="center_text2">$50</div>
+                </div>
+           </div>
+          <!-- 導滑動JS -->  
+          <script>
+          $(document).ready(function() {
+            var owl = $("#owl-demo5");
+            owl.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,4], // 3 items betweem 900px and 601px
+            itemsTablet: [600,3], //2 items between 600 and 0;
+            pagination : false,
+            itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+            });
+          });
+          </script>
+          <!--箭頭-->
+          <div class="glyphicon glyphicon-menu-left"></div>
+          <div class="glyphicon glyphicon-menu-right"></div>
+        </div>
+           <!--底部-->
+          <div class="wrapper_line"></div>
+          <div id="shopping_box" style="margin-top:10px;">
+              <div class="left">
+                 <span class="total">Total：</span><span class="print">NT.999</span>
+              </div>
+              <div class="right">
+               　<a href="#"><span class="glyphicon glyphicon-triangle-left"></span>BACK│</a>
+                <a href="#">NEXT<span class="glyphicon glyphicon-triangle-right"></span></a>
+              </div>
+          </div>
+        </div> 
+      </div>
+      <!-- 6頁面 確認工單及條款 -->
+      <div role="tabpanel" class="tab-pane fade" id="receipt" aria-labelledby="receipt-tab">
+        <div id="sm_wrapper6">
+          <div id="sm_content6">
+             <div id="sm_sidebar6-1">
+               <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h3 class="panel-title" id="panel-title">客製商品內容<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+                </div>
+                <div class="panel-body receipt_content">
+                  <div>貨號：</div>
+                  <div>品名：</div>
+                  <div>顏色：</div>
+                  <div>尺寸：</div>
+                  <div>電繡圖案：</div>
+                  <div>圖案顏色：</div>
+                  <div>電繡名子：</div>
+                  <div>名子顏色：</div>
+                  <div>包裝：</div>
+                  <div>單價：</div>
+                  <div style="border:1px #000 dashed"></div>
+                  <div style="font-size:18px; font-weight:bold;">製作數量：
+                      <select class="selectpicker">
+                          <option>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                      </select>
+                  </div>
+                  <div style="font-size:13px; color:red;">*注意!客製化商品恕不接受退換貨</div>
+                </div>
+              </div>
+             </div>
+
+             <div id="sm_sidebar6-2">
+              <img id="change" class="img-thumbnail" src="images/short/file201312102142025.jpg" >
+             </div>
+
+             <div id="sm_sidebar6-3">
+               <div class="lang_line">法律條款</div>
+               <div class="cte_lang">
+                  行政機關為發揮共同一體之行政機能，應於其權限範圍內互相協助。－－＞第一項
+行政機關執行職務時，有下列情形之一者，得向無隸屬關係之其他機關請求協助－－＞第二項
+一、因法律上之原因，不能獨自執行職務者。－－＞第二項第一款
+二、因人員、設備不足等事實上之原因，不能獨自執行職務者。
+三、執行職務所必要認定之事實，不能獨自調查者。
+四、執行職務所必要之文書或其他資料，為被請求機關所持有者。
+五、由被請求機關協助執行，顯較經濟者。
+六、其他職務上有正當理由須請求協助者。
+前項請求，除緊急情形外，應以書面為之。－－＞第三項
+被請求機關於有下列情形之一者，應拒絕之︰－－＞第四項
+一、協助之行為，非其權限範圍或依法不得為之者。－－＞第四項第一款
+二、如提供協助，將嚴重妨害其自身職務之執行者。
+被請求機關認有正當理由不能協助者，得拒絕之。－－＞第五項
+被請求機關認為無提供行政協助之義務或有拒絕之事由時，應將其理由通知請求協助機關。請求協助機關對此有異議時，由其共同上級機關決定之，無共同上級機關時，由被請求機關之上級機關決定之。
+被請求機關得向請求協助機關要求負擔行政協助所需費用。其負擔金額及支付方式，由請求協助機關及被請求機關以協議定之；協議不成時，由其共同上級機關定之。      
+               </div>
+                <input type="checkbox" value="1">我確認接受上述條款
+                <br>
+                <input type="checkbox" value="1">客製化商品恕不接受退換貨
+             </div>
+          </div>
+         </div>
+          
+          <!-- img_wrapper6 -->
+          <div id="img_wrapper6">
+              <button type="button" class="btn btn-success"><p class="glyphicon glyphicon-arrow-left"></p><br>繼續訂做</button>
+              <button type="button" class="btn btn-pink"><p class="glyphicon glyphicon-ok"></p><br>前往購物車</button>
+              <div id="top">※商品將於確認結帳後七日內為您寄出</div>
+              <div>※運費100元，滿千免運</div>
+          </div>
+               <!--底部-->
+          <div class="wrapper_line"></div>
+          <div id="shopping_box" style="margin-top:10px;">
+              <div class="left">
+                 <span class="total">Total：</span><span class="print">NT.999</span>
+              </div>
+              <div class="right">
+               　<a href="#"><span class="glyphicon glyphicon-triangle-left"></span>BACK│</a>
+                <a href="#" class="choose2">進入購物車<span class="glyphicon glyphicon-triangle-right"></span></a>
+              </div>
+          </div>
+        </div>
+
+      <!-- 7頁面  -->
+      <div role="tabpanel" class="tab-pane fade" id="receiving" aria-labelledby="receiving-tab">
+           <div id="sm_wrapper7">
+           <div id="product_table">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>商品名稱</th>
+                    <th>顏色</th>
+                    <th>尺寸</th>
+                    <th>數量</th>
+                    <th>單價</th>
+                    <th>折扣價</th>
+                    <th>小計</th>
+                    <th>刪除</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="product_name">1960332男襪</td>
+                    <td>深藍色</td>
+                    <td>M</td>
+                    <td><select class="selectpicker">
+                          <option>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                      </select>
+                    </td>
+                    <td>390</td>
+                    <td>299</td>
+                    <td>299</td>
+                    <td>刪除</td>
+                  </tr>
+                  <tr>
+                    <td class="product_name">1960332男襪</td>
+                    <td>深藍色</td>
+                    <td>M</td>
+                    <td><select class="selectpicker">
+                          <option>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                      </select>
+                    </td>
+                    <td>390</td>
+                    <td>299</td>
+                    <td>299</td>
+                    <td>刪除</td>
+                  </tr>
+                  <tr>
+                    <td class="product_name">1960332男襪</td>
+                    <td>深藍色</td>
+                    <td>M</td>
+                    <td><select class="selectpicker">
+                          <option>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                      </select>
+                    </td>
+                    <td>390</td>
+                    <td>299</td>
+                    <td>299</td>
+                    <td>刪除</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>    
+            <div class="total">
+              <table width="250">
+                <tbody>
+                  <tr>
+                     <td style="padding-right: 100px;" align="right">商品金額小計</td>
+                     <td align="right">NT$ 897</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #CCC;">
+                     <td style="padding-right: 100px;" align="right">運費小計</td>
+                     <td align="right">未選擇</td>
+                  </tr>
+                  <tr style="color:red;">
+                     <td style="padding-right: 100px;" align="right">總計</td>
+                     <td align="right">NT$ 897</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+               <!--底部-->
+          <div class="wrapper_line"></div>
+           <div id="shopping_box" style="margin-top:10px;">
+              <div class="right">
+               　<a href="#" ><span class="glyphicon glyphicon-triangle-left"></span>BACK│</a>
+                <a href="#" class="choose3">NEXT<span class="glyphicon glyphicon-triangle-right"></span></a>
+              </div>
+           </div>
+        </div>
+
+          <!-- check_wrapper -->
+          <div id="check_wrapper">
+            <div id="customer_data">
+    
+              <h3>訂購人資訊</h3>
+                  <div class="form-group" style="width:900px; float:left;">
+                    <label style="float:left;">中文全名:</label>
+                    <input name="name" type="text" class="form-control" required="required" style="width:250px;">
+                  </div>
+                  <div class="form-group" style="width:900px; float:left;">
+                    <label style="float:left;">電子郵件:</label>
+                    <input name="email" type="email" class="form-control" required="required" style="width:250px;">
+                  </div>
+                  <div class="form-group" style="width:900px; float:left;">
+                    <label style="float:left;">郵件確認:</label>
+                    <input name="email" type="email" class="form-control" required="required" style="width:250px;">
+                  </div>
+                  <div class="form-group" style="width:900px; float:left;">
+                    <label style="float:left;">手機號碼:</label>
+                    <input name="phone" type="text" class="form-control" required="required" style="width:250px;">
+                  </div>
+                  <div class="form-group" style="width:900px; float:left;">
+                    <label style="float:left;">郵遞區號:</label>
+                    <div id="twzipcode">
+                        <div data-role="county"  data-style="form-control" style="float:left;"></div>
+                        <div data-role="district" data-style="form-control" style="float:left;"></div>
+                        <div data-role="zipcode" data-style="form-control" style="float:left; width:80px;"></div>
+                    </div>
+                  </div>
+                  <div class="form-group" style="width:900px; float:left;">
+                     <label style="float:left;">送貨地址</label>
+                     <input name="addres" type="text" class="form-control" required="required" style="width:500px;">
+                  </div>
+                <h3>發票資訊</h3>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="two_invoice" id="two_invoice" value="0" checked>
+                     	 二聯式發票
+                    </label>
+                    <label>
+                      <input type="radio" name="two_invoice" id="three_invoice" value="1">
+                      	三聯式發票
+                    </label>
+                  </div>
+                  <div class="form-group" style="width:500px; margin-left:120px;">
+                    <label>公司抬頭:</label>
+                    <input name="company" type="text" class="form-control company_data" style="width:180px;">
+                    <label>公司統編:</label>
+                    <input name="company_number" type="text" class="form-control company_data" style="width:180px;">
+                  </div>
+                <h3>付款方式</h3>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="card" id="optionsRadios1" value="1" checked>
+                      	線上信用卡支付
+                    </label>
+                  </div>
+               </div>
+             <!--底部-->
+             <div class="wrapper_line"></div>
+             <div id="shopping_box" style="margin-top:10px;">
+                <div class="right">
+                 　		  <a href="#" class="choose3_clearn"><span class="glyphicon glyphicon-triangle-left"></span>BACK│</a>
+                  <a href="#" ><button style="" type="submit">送出<span class="glyphicon glyphicon-triangle-right"></span></button></a>
+                </div>
+             </div>  
+  
+        </div>
+     </div>
+      <!-- 7頁面 end -->
+
+
+      <!-- 8頁面 完成 -->
+       <div role="tabpanel" class="tab-pane fade" id="finish" aria-labelledby="finish-tab">
+          <div style="width:1000px; height:300px; text-align:center; margin-top:120px; font-family:'微軟正黑體'">
+            <h2>感謝您的購買</h2>
+            <h2>您的商品會在確認結帳後7日內寄出</h2>
+            <h2>祝您有美好的一天。</h2>
+          </div>
+            <!--底部-->
+            <div class="wrapper_line"></div>
+             <div id="shopping_box" style="margin-top:10px;">
+                <div class="right">
+                  <a href="#" ><button type="submit">登出離開回首頁<span class="glyphicon glyphicon-triangle-right"></span></button></a>
+                </div>
+             </div>  
+       </div>
+
+</div>
+
+
+  <script src="owl-carousel/owl.carousel.js"></script>
+</body>
+</html>

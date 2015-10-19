@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/webapp/myUtilJS/webPrintJs/StarBarcodeEncoder.js,src/main/webapp/Sample/js/StarWebPrintBuilder.js,src/main/webapp/myUtilJS/webPrintJs/StarWebPrintBuilder.js,target/customized/bruce/fonts/glyphicons-halflings-regular.svg,src/main/webapp/Sample/js/StarBarcodeEncoder.js,src/main/webapp/bruce/fonts/glyphicons-halflings-regular.svg
+validator.Unchecked=

@@ -1,0 +1,493 @@
+#wrapper{
+    width: 1050px;
+    margin: 0 auto;
+  }
+#content{
+  width: 100%;
+  margin: 0 auto;
+  font-family: '微軟正黑體';
+}
+/*畫面1*/
+.sock_model{
+  float: left;
+  font-size: 30px;
+  height: 260px !important;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 80px;
+}
+#sm_wrapper1{
+  margin-top: 20px;
+  width: 1050px;
+
+}
+#sm_sidebar1-1{
+  width:900px; 
+  height: 500px;
+  margin: auto;
+}
+/*畫面2*/
+#sm_wrapper2{
+  margin-top: 20px;
+}
+
+#sm_sidebar2-1{
+  width:500px; 
+  float:left !important;
+  margin-top:18px;
+  padding-left: 80px; 
+}
+
+#sm_sidebar2-3{
+  float:left !important;
+  width:380px; 
+  padding-left: 80px;
+  height: 500px;
+}
+#img_wrapper .product_name{
+  font-size: 14px;
+  font-weight: 900;
+  font-family: '微軟正黑體';
+
+}
+#img_wrapper .product_id{
+  font-size: 14px;
+  font-weight: 300;
+  font-family: '微軟正黑體';
+}
+#img_wrapper .product_price{
+  font-size: 14px;
+  font-weight: 900;
+  color: red;
+  font-family: '微軟正黑體';
+}
+#pagination{
+  width: 1000px;
+  float: left;
+  text-align: center;
+  padding-left: 450px;
+}
+#model{
+  height: 500px;
+}
+/*畫面3*/
+
+#sm_wrapper3{
+  margin-top: 20px;
+}
+#sm_sidebar3-1{
+  float:left !important;
+  width:480px; 
+  padding-left: 80px;
+  height: 400px;
+}
+.color_img{
+  width: 280px;
+  height: 380px;
+}
+#sm_sidebar3-2{
+  width:450px; 
+  float:left !important;
+  padding-left: 40px; 
+}
+#sm_sidebar3-3{
+  margin: 0 0 0 28px;
+}
+#sm_footer{
+ float:left !important;
+   width:1050px; 
+   height:100px;　 
+}
+
+/*畫面4*/
+#sm_wrapper4-1{
+  width: 510px;
+  float: left;
+  height: 500px;
+}
+
+#sm_wrapper4-2{
+  margin-top: 30px;
+  width: 490px;
+  float: left;
+}
+#sm_sidebar4-1{
+  width:500px; 
+  float:left !important;
+  margin-left: 10px;
+  padding-left: 80px; 
+  border-bottom: 1px solid #CCC;
+}
+#sm_sidebar4-2-1{
+  float:left !important;
+  margin-top:18px;
+  margin-left: 10px;
+  width:500px; 
+
+}
+#sm_sidebar4-detail{
+  float:left !important;
+  margin-top:18px;
+  margin-left: 10px;
+  width:500px; 
+
+}
+#sm_sidebar4-3{
+  float:left !important;
+  width:430px; 
+  padding-left: 80px;
+  height: 490px;
+  position:relative;
+  overflow:hidden;
+}
+/*scroll 圖案(4)*/
+.cte_img{
+  overflow-y:auto !important;
+  height:80px; 
+  width:520px;
+}
+.cte_img::-webkit-scrollbar {
+  width: 12px;
+}
+.cte_img::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  border-left: 1px solid #ccc;
+}
+.cte_img::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+.cte_img::-webkit-scrollbar-thumb:hover {
+   background-color: #aaa;
+}
+
+.cte_img li{
+  list-style: none;
+  float: left;
+  margin: 8px;
+}
+.cte_img li a{
+   display: block;
+}
+.cte_img li a img{
+   width: 70px;
+   height: 70px;
+}
+/*畫面5*/
+#sm_wrapper5{
+  margin-top: 20px;
+
+}
+#sm_content5{
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  padding-left: 20px;
+}
+#sm_sidebar5{
+  width: 150px;
+  float: left;
+  margin:auto;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+.radio5{
+  width: 25px;
+  height: 25px;
+}
+#for_radio5{
+  width: 25px;
+  margin: auto;
+}
+.center_text1{
+  text-align:center !important;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: '微軟正黑體';
+}
+.center_text2{
+  text-align:center !important;
+  font-size: 17px;
+}
+.center_text3{
+  text-align:center !important;
+  font-size: 17px;
+  margin-top:20px; 
+}
+
+/*畫面6*/
+#sm_wrapper6{
+ margin-top: 20px;
+}
+#sm_content6{
+ height: 500px;
+ width: 920px;
+ margin: auto;
+}
+#sm_sidebar6-1{
+ width: 300px;
+ float: left;
+ margin-right: 10px;
+}
+#sm_sidebar6-1 img{
+ width: 250px;
+ height: 350px;
+ border:none;
+}
+#sm_sidebar6-2{
+ width: 280px;
+ float: left;
+ margin-right: 20px;
+}
+#sm_sidebar6-3{
+ width: 280px;
+ float: left;
+ margin-left: 20px;
+}
+#sm_sidebar6-3 input{
+ margin-top: 20px;
+}
+#sm_sidebar6-4{
+ width: 900px;
+ margin:10px auto;
+ float: left;
+ text-align: center;
+ padding-right: 30px;
+}
+.receipt_content div{
+ margin-bottom: 5px;
+ font-size: 15px;
+
+}
+.receipt_content{
+ height: 350px;
+}
+.lang_line{
+ border-bottom:solid 1px #CCC;
+ margin-bottom: 10px;
+}
+/*scroll 法律(6)*/
+.cte_lang{
+  overflow-y:auto !important;
+  height:300px; 
+  width:300px;
+}
+.cte_lang::-webkit-scrollbar {
+  width: 12px;
+}
+.cte_lang::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  border-left: 1px solid #ccc;
+}
+.cte_lang::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+.cte_lang::-webkit-scrollbar-thumb:hover {
+   background-color: #aaa;
+}
+/*畫面7*/
+#sm_wrapper7{
+  margin-top: 20px;
+}
+#sm_content7{
+  height: 500px;
+  width: 800px;
+  margin:auto;
+}
+#sm_content7 input[type='radio']{
+  width:16px; height:16px; margin:5px;
+}
+#sm_wrapper7 .form-control{
+  display:inline !important;
+}
+#sm_sidebar7-1{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+#sm_sidebar7-2{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+#sm_sidebar7-4{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.title{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/*畫面8*/
+#sm_wrapper8{
+  margin-top: 20px;
+}
+#sm_content8{
+  height: 500px;
+  width: 800px;
+  margin: auto;
+
+}
+#sm_sidebar8-1{
+  height: 300px;
+  width: 200px;
+  margin: auto;
+}
+#sm_sidebar8-1 img{
+  border:none !important;
+}
+#sm_sidebar8-2{
+  text-align: center;
+}
+/*bootstrap edit*/
+.edit2{
+  width: 170px;
+  height: 70px;
+  margin: 5px;
+}
+.carousel{
+  width: 920px;
+  height: :127px;
+  float: left;
+}
+.carousel-inner{
+  height: 100px;
+  margin: 10px 0 0 0;
+}
+.nav{
+  font-size:11px;
+  font-family: '微軟正黑體';
+}
+.edit3{
+  width: 18px;
+  height: 18px;
+}
+.edit4{
+  width: 18px;
+  height: 18px;
+}
+.radio_1{
+  font-size: 20px;
+  margin: 20px;
+}
+.radio_2{
+  font-size: 20px;
+  margin: 20px 0 0 5px;
+}
+.radio_3{
+  font-size: 20px;
+  margin: 20px 0 0 5px;
+}
+
+.panel-body{
+  height: 310px;
+}
+.color_button{
+  width: 75px;
+  height: 47px;
+}
+.revision4{
+  margin: 20px;
+  float: left;
+}
+.revision3{
+  font-size:16px; 
+  text-align:center;
+}
+#img_wrapper{
+  margin-top: 5px;
+  padding-left: 30px;
+  height: 500px;
+}
+#img_wrapper li{
+  list-style: none;
+  float: left;
+  text-align: center;
+}
+#detail{
+  margin:10px;
+
+}
+#detail img{
+  width: 100px;
+  height: 150px;
+}
+
+.insert_text{
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Arial';
+ }
+ 
+/* ---------- 數量選擇框樣式 ---------- */
+.container {
+    padding-top: 0px;  
+    width: 280px;
+}
+
+@media ( max-width: 585px ) {
+    .input-group span.input-group-btn,.input-group input,.input-group button{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .input-group {
+        position: relative;   
+    }
+    .input-group span.data-up{
+        position: absolute;
+        top: 0;
+    }
+    .input-group span.data-dwn{
+        position: absolute;
+        bottom: 0;
+    }
+    .form-control.text-center {
+        margin: 34px 0;
+    }
+    .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+        margin-left:0;
+    }
+}
+/* ---------- 數量選擇框樣式END ---------- */
+
+/*scroll 電繡顏色圖案顯示區塊*/
+.embroidery_img{
+  overflow-y:auto !important;
+  height:240px; 
+  width:520px;
+}
+.embroidery_img::-webkit-scrollbar {
+  width: 12px;
+}
+.embroidery_img::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  border-left: 1px solid #ccc;
+}
+.embroidery_img::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+.embroidery_img::-webkit-scrollbar-thumb:hover {
+   background-color: #aaa;
+}
+
+.embroidery_img li{
+  list-style: none;
+  float: left;
+  margin: 8px;
+}
+.embroidery_img li a{
+   display: block;
+}
+.embroidery_img li a img{
+   width: 70px;
+   height: 70px;
+}
+
+/* ---------- 住址:動態下拉式選單 --------------- */
+
+.zipcode {background:#C00;color:#fff}
+.county {background:#4169E1;color:#fff}
+.district {background:#008000;color:#fff}
+
+/* ---------- 住址:動態下拉式選單END ---------- */

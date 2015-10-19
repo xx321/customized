@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:c="http://www.springframework.org/schema/c" xmlns:cache="http://www.springframework.org/schema/cache" xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- 引入项目配置文件 -->
+	<!-- <context:property-placeholder location="classpath:config.properties" /> -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:config.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 自动扫描dao和service包(自动注入) -->
+	<context:component-scan base-package="sy.dao,sy.service,max.dao,max.service,max.sms" />
+
+	<!-- Spring JavaMail 組件配置(自動注入) 註:原生組件不能用掃描配置 -->
+	<bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl" />
+	<bean id="simpleMailMessage" class="org.springframework.mail.SimpleMailMessage" />
+	
+	<!-- Spring 支持 Java模板引擎FreeMarker 參數配置  註:原生組件不能用掃描配置-->
+	<bean id="freemarkerConfiguration" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<description>
+			FreeMarker Config in web tier.
+		</description>
+		<property name="templateLoaderPaths">
+			<list>
+				<value>classpath:mail/</value>
+			</list>
+		</property>
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="default_encoding">UTF-8</prop>
+				<prop key="output_encoding">UTF-8</prop>
+				<prop key="locale">en_US</prop>
+				<prop key="number_format">#</prop>
+				<prop key="whitespace_stripping">true</prop>
+				<prop key="classic_compatible">true</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<bean id="mailSenderInfo" class="max.sms.MailSenderInfo" >
+		<property name="serverHost" value="smtp.gmail.com"/>
+		<property name="serverPort" value="587"/>
+		<property name="validate" value="true"/>
+		<property name="starttls" value="true"/>
+		<property name="userName" value="a125573251@gmail.com"/>
+		<property name="password" value="0938006312"/>
+		<property name="fromAddress" value="a125573251@gmail.com"/>
+		<property name="toAddress" value="xx.321@hotmail.com"/>
+		<property name="timeout" value="25000"/>
+		<property name="subject" value="this is a test mail"/>
+		<property name="text" value="this is a test mail"/>
+		<property name="filepath" value=""/>
+	</bean>
+	
+</beans>

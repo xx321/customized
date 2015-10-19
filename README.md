@@ -7,7 +7,7 @@ Web平台 : Tomcat<br/>
 資料庫 : MySQL Database<br/>
 硬體應用 : 熱感應印表器<br/>
 <br/>
-安裝時，需將doc資源下的upload.rar解壓，放至任一路徑，然後設定伺服器虛擬路徑"/upload"，指向放至upload檔案的路徑。<br/>
+安裝時，需將doc資源下的upload.rar解壓，放置任一路徑，然後設定伺服器虛擬路徑"/upload"，指向放置upload檔案的路徑。<br/>
 前台測試url : http://localhost:8080/customized/<br/>
 後台測試url : http://localhost:8080/customized/backstage/index.jsp<br/>
 <br/>
